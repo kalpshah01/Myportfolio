@@ -1,0 +1,227 @@
+/* Smooth page transition animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tech Projects Page */
+.tech-projects {
+  padding: 80px 0;
+  background-color: #1a1a1a;
+  min-height: calc(100vh - 200px);
+  animation: fadeInUp 0.5s ease;
+}
+
+.tech-projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.back-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #764ba2;
+  transform: translateX(-5px);
+}
+
+.tech-projects-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInUp 0.5s ease 0.2s both;
+}
+
+.tech-title {
+  font-size: 40px;
+  color: #667eea;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.tech-description {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Search Container */
+.search-container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #667eea;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #764ba2;
+}
+
+.tech-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.tech-project-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.5s ease;
+  animation-fill-mode: both;
+}
+
+.tech-project-card:nth-child(1) { animation-delay: 0.1s; }
+.tech-project-card:nth-child(2) { animation-delay: 0.2s; }
+.tech-project-card:nth-child(3) { animation-delay: 0.3s; }
+.tech-project-card:nth-child(4) { animation-delay: 0.4s; }
+.tech-project-card:nth-child(5) { animation-delay: 0.5s; }
+.tech-project-card:nth-child(6) { animation-delay: 0.6s; }
+
+.tech-project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.tech-project-card .card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.tech-project-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tech-project-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.tech-project-card .card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-project-card .card-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.tech-project-card .card-content p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.tech-project-card .card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tech-project-card .tech-tag {
+  background: #f0f0f0;
+  color: #667eea;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tech-project-card .view-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.tech-project-card .view-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* No Results */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.no-results p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.clear-search-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.clear-search-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .tech-title {
+    font-size: 28px;
+  }
+
+  .tech-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

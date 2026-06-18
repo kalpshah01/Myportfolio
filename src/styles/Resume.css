@@ -1,0 +1,197 @@
+.resume {
+  padding: 60px 0;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.resume .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.resume h2 {
+  font-size: 36px;
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.resume > .container > p {
+  color: #b0b0b0;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.resume a {
+  text-decoration: none;
+}
+
+.my-education {
+  padding: 80px 0;
+  background-color: #0d0d0d;
+}
+
+.my-education .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main h2 {
+  font-size: 32px;
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.main .paragrph {
+  color: #b0b0b0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.exp {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.certificate {
+  background: #262626;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-left: 5px solid #d4af37;
+}
+
+.certificate .he {
+  font-size: 20px;
+  color: #e0e0e0;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.certificate .sp {
+  display: block;
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.certificate span {
+  display: block;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.certificate .hr {
+  margin: 15px 0;
+  border: 1px solid #444;
+  border-bottom: none;
+}
+
+.certificate .paragrph {
+  color: #b0b0b0;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.hr {
+  border: 1px solid #eee;
+  border-bottom: none;
+  margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .exp {
+    grid-template-columns: 1fr;
+  }
+
+  .main h2 {
+    font-size: 26px;
+  }
+
+  .certificate .he {
+    font-size: 18px;
+  }
+
+  .resume h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume {
+    padding: 40px 0;
+  }
+
+  .resume .container {
+    padding: 0 10px;
+  }
+
+  .resume h2 {
+    font-size: 24px;
+  }
+
+  .resume > .container > p {
+    font-size: 14px;
+  }
+
+  .my-education {
+    padding: 50px 0;
+  }
+
+  .my-education .container {
+    padding: 0 10px;
+  }
+
+  .main h2 {
+    font-size: 22px;
+  }
+
+  .main .paragrph {
+    font-size: 14px;
+  }
+
+  .exp {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px 0;
+  }
+
+  .certificate {
+    padding: 15px;
+  }
+
+  .certificate .he {
+    font-size: 16px;
+  }
+
+  .certificate .sp {
+    font-size: 12px;
+  }
+
+  .certificate span {
+    font-size: 12px;
+  }
+
+  .certificate .paragrph {
+    font-size: 12px;
+  }
+
+  .hr {
+    margin: 20px 0;
+  }
+}
